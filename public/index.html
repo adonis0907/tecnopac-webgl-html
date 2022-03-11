@@ -8,8 +8,15 @@
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGL.json");
     </script>
+    
   </head>
   <body>
     <div id="gameContainer" style="width: 960px; height: 600px; margin: auto"></div>
+    <div id="fullscreen-button" style="height:30px; width: 300px; background: green; margin-top: 50px; color: white; cursor: pointer;" onclick="gameInstance.SetFullscreen(1)"><b>Click here to make it full screen.</b></div>
   </body>
+
+  <script>
+      var button = document.getElementById("fullscreen-button");
+      button.click();
+  </script>
 </html>
